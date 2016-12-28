@@ -48,6 +48,5 @@
             </div>
         </section>
     </div>
-<h1>Hallo antony Hop</h1>
 </body>
 </html>

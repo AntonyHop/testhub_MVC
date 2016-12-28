@@ -10,7 +10,7 @@
             <a href="/" class="navbar-brand">TestHub</a>
             <ul class="nav navbar-nav">
                 <li ng-repeat="page in pages"><a href="#" ng-click="openStaticPage(page)">{{page.name}}</a></li>
-                <li><a style="z-index: 10000;" class="add_btn" ng-click="createPage()">Р”РѕР±Р°РІРёС‚СЊ</a></li>
+                <li><a style="z-index: 10000;" class="add_btn" ng-click="createPage()">Добавить</a></li>
             </ul>
         </div>
     </nav>
@@ -18,7 +18,7 @@
     <section class="panel panel-primary col-md-3 testlist">
         <div class="panel-heading row">
             <h3 class="panel-title">
-                РЎРїРёСЃРѕРє С‚РµСЃС‚РѕРІ
+                Список тестов
             </h3>
 
         </div>
@@ -32,7 +32,7 @@
         <div class="col-md-12" ng-show="showSp">
             <div class="input-group input-group-lg">
                 <span class="input-group-addon" id="sizing-addon1"><i class="glyphicon  glyphicon-pencil"></i></span>
-                <input type="text" class="form-control" placeholder="РќР°Р·РІР°РЅРёРµ СЃС‚СЂР°РЅРёС†Рё" aria-describedby="sizing-addon1" ng-model="currPage.name">
+                <input type="text" class="form-control" placeholder="Название страници" aria-describedby="sizing-addon1" ng-model="currPage.name">
             </div>
             <div class="textCon">
                 <text-angular ng-model="currPage.content"></text-angular>
@@ -67,14 +67,14 @@
                                   </span>
                                 <input type="text" class="form-control" aria-label="..." ng-model="resp.resp">
                             </div>
-                            <button class="btn btn-primary col-md-offset-9 col-md-3" ng-click="addOneResp(vopros)"><i class="fa fa-plus-circle" aria-hidden="true"></i> Р”РѕР±Р°РІРёС‚СЊ РІР°СЂРёР°РЅС‚ РѕС‚РІРµС‚Р°</button>
+                            <button class="btn btn-primary col-md-offset-9 col-md-3" ng-click="addOneResp(vopros)"><i class="fa fa-plus-circle" aria-hidden="true"></i> Добавить вариант ответа</button>
                         </div>
                     </div>
                 </div>
                 <div class="btn-group col-md-12 row" role="group">
-                    <button class="btn btn-warning col-md-4" ng-click="addOneQuestions()"><i class="fa fa-plus-circle" aria-hidden="true"></i> Р”РѕР±Р°РІРёС‚СЊ РІРѕРїСЂРѕСЃ</button>
-                    <button class="btn btn-danger col-md-4" ng-click="dellOneTest(currPage)"><i class="fa fa-trash" aria-hidden="true"></i> РЈРґР°Р»РёС‚СЊ С‚РµСЃС‚</button>
-                    <button class="btn btn-primary col-md-4"><i class="fa fa-save" aria-hidden="true"></i> РЎРѕС…СЂР°РЅРёС‚СЊ С‚РµСЃС‚</button>
+                    <button class="btn btn-warning col-md-4" ng-click="addOneQuestions()"><i class="fa fa-plus-circle" aria-hidden="true"></i> Добавить вопрос</button>
+                    <button class="btn btn-danger col-md-4" ng-click="dellOneTest(currPage)"><i class="fa fa-trash" aria-hidden="true"></i> Удалить тест</button>
+                    <button class="btn btn-primary col-md-4"><i class="fa fa-save" aria-hidden="true"></i> Сохранить тест</button>
                 </div>
             </div>
         </div>
