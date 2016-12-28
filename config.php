@@ -23,4 +23,4 @@ define("DBHOST","localhost");
 define("DB_USERNAME","root");
 define("DB_PASSWORT","");
 define("DB_NAME","TestHub_db");
-$suka = 1 ;
+$suka = 2 ;
